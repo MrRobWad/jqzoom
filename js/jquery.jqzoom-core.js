@@ -289,8 +289,8 @@
             };
             this.fetchdata = function () {
                 $obj.findborder();
-                $obj.w = image.width();
-                $obj.h = image.height();
+                $obj.w = image.get(0).width;
+                $obj.h = image.get(0).height;
                 $obj.ow = image.outerWidth();
                 $obj.oh = image.outerHeight();
                 $obj.pos = image.offset();
